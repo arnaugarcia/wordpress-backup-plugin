@@ -1,1 +1,2 @@
-zip -j -r out/wordpress-plugin.zip src/.
+cd src
+zip -r ../out/wordpress-plugin.zip .
