@@ -1,6 +1,6 @@
 <?php
 
-function auto_backup_plugin_homepage()
+function auto_backup_plugin_homepage(): void
 {
     ?>
     <table>

@@ -1,6 +1,7 @@
 <?php
 
-function find_database_options() {
+function find_database_options(): array
+{
     $options = array();
     $options['db_name'] = DB_NAME;
     $options['db_user'] = DB_USER;

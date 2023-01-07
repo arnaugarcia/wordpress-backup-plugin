@@ -12,7 +12,8 @@ License: MIT
 
 require_once 'admin/view/view.php';
 require_once 'admin/admin.php';
-function auto_backup_add_plugin_management_page_option() {
+function auto_backup_add_plugin_management_page_option(): void
+{
     add_management_page(
         'Site Backup',  // Título de la página
         'Site Backup',  // Título del menú
