@@ -1,6 +1,6 @@
 <?php
 
-require_once 'view/view.php';
+require_once 'view.php';
 function find_database_options(): array
 {
     $options = array();

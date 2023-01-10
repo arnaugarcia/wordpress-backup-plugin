@@ -10,15 +10,16 @@ Author URI: https://arnaugarcia.com
 License: MIT
 */
 
-require_once 'admin/admin.php';
+require_once 'dashboard/home/home.php';
 function auto_backup_add_plugin_management_page_option(): void
 {
     add_management_page(
-        'Site Backup',  // Título de la página
-        'Site Backup',  // Título del menú
-        'manage_options',       // Permisos necesarios para acceder a la página
-        'site-backup',     // Slug de la página
-        'auto_backup_plugin_homepage' // Función que muestra el contenido de la página
+        'Site Backup',  // Page Title
+        'Site Backup',  // Menu Title
+        'manage_options',       // Necessary permission to see the page
+        'site-backup',     // Slug of the page
+        'auto_backup_plugin_homepage' // function that calls shows the page
     );
 }
+
 add_action('admin_menu', 'auto_backup_add_plugin_management_page_option');
